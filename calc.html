@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scientific Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+<div class="calc">
+  <div class="brand">
+    <span class="brand-name">Calc Lab</span>
+    <span class="brand-model">SCI &middot; 82</span>
+  </div>
+
+  <div class="screen">
+    <div class="status-row">
+      <div class="status-tags">
+        <span class="tag shift-on" id="tag-shift">SHIFT</span>
+        <span class="tag" id="tag-deg">DEG</span>
+        <span class="tag" id="tag-rad">RAD</span>
+      </div>
+      <span class="tag" id="tag-ans">ANS</span>
+    </div>
+    <div class="history" id="history">&nbsp;</div>
+    <div class="result-row">
+      <span class="result sign-neutral" id="result">0</span>
+    </div>
+  </div>
+
+  <div class="pad">
+    <button class="key-shift" id="shiftBtn">SHIFT</button>
+    <button class="key-fn2" data-action="mode">DEG/RAD</button>
+    <button class="key-fn2" data-action="paren-open">(</button>
+    <button class="key-fn2" data-action="paren-close">)</button>
+    <button class="key-ac" data-action="clear">AC</button>
+
+    <button class="key-fn" data-trig="sin">sin</button>
+    <button class="key-fn" data-trig="cos">cos</button>
+    <button class="key-fn" data-trig="tan">tan</button>
+    <button class="key-fn" data-action="log">log</button>
+    <button class="key-fn" data-action="del">DEL</button>
+
+    <button class="key-fn" data-action="sqrt">&radic;x</button>
+    <button class="key-fn" data-action="sq">x<sup>2</sup></button>
+    <button class="key-fn" data-action="cube">x<sup>3</sup></button>
+    <button class="key-fn" data-action="pow">x<sup>y</sup></button>
+    <button class="key-fn" data-action="inv">1/x</button>
+
+    <button class="key-fn2" data-action="pi">&pi;</button>
+    <button class="key-fn2" data-action="euler">e</button>
+    <button class="key-fn2" data-action="ln">ln</button>
+    <button class="key-fn2" data-action="fact">x!</button>
+    <button class="key-fn2" data-action="ans">Ans</button>
+
+    <button class="key-num" data-num="7">7</button>
+    <button class="key-num" data-num="8">8</button>
+    <button class="key-num" data-num="9">9</button>
+    <button class="key-op" data-op="/">&divide;</button>
+    <button class="key-op" data-action="percent">%</button>
+
+    <button class="key-num" data-num="4">4</button>
+    <button class="key-num" data-num="5">5</button>
+    <button class="key-num" data-num="6">6</button>
+    <button class="key-op" data-op="*">&times;</button>
+    <button class="key-op" data-action="negate">+/&minus;</button>
+
+    <button class="key-num" data-num="1">1</button>
+    <button class="key-num" data-num="2">2</button>
+    <button class="key-num" data-num="3">3</button>
+    <button class="key-op" data-op="-">&minus;</button>
+    <button class="key-eq" data-action="equals" style="grid-row: span 2;">=</button>
+
+    <button class="key-num key-zero" data-num="0">0</button>
+    <button class="key-num" data-action="decimal">.</button>
+    <button class="key-op" data-op="+">+</button>
+  </div>
+</div>
+
+<script src="calc.js"></script>
+
+</body>
+</html>
